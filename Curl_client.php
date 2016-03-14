@@ -32,8 +32,7 @@ class Curl_client
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, TRUE); 
         curl_setopt($curl, CURLOPT_URL, $this->_url);
         curl_setopt($curl, CURLOPT_HTTPHEADER, array(
-            'X-API-KEY: ' . $this->_api_key,
-            'Accept: application/json'
+            'X-API-KEY: ' . $this->_api_key
         ));
 
         $response = curl_exec($curl); 
@@ -52,8 +51,7 @@ class Curl_client
         curl_setopt($curl, CURLOPT_POSTFIELDS, http_build_query($params));
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, TRUE);
         curl_setopt($curl, CURLOPT_HTTPHEADER, array(
-            'X-API-KEY: ' . $this->_api_key,
-            'Accept: application/json'
+            'X-API-KEY: ' . $this->_api_key
         ));
 
         $response = curl_exec($curl);
@@ -73,8 +71,7 @@ class Curl_client
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, TRUE);
         curl_setopt($curl, CURLOPT_POSTFIELDS, http_build_query($params));
         curl_setopt($curl, CURLOPT_HTTPHEADER, array(
-            'X-API-KEY: ' . $this->_api_key,
-            'Accept: application/json'
+            'X-API-KEY: ' . $this->_api_key
         ));
 
         $response = curl_exec($curl);
@@ -93,8 +90,7 @@ class Curl_client
         curl_setopt($curl, CURLOPT_HEADER, FALSE);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, TRUE);
         curl_setopt($curl, CURLOPT_HTTPHEADER, array(
-            'X-API-KEY: ' . $this->_api_key,
-            'Accept: application/json'
+            'X-API-KEY: ' . $this->_api_key
         ));
 
         $response = curl_exec($curl);
